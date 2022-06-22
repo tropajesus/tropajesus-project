@@ -1,0 +1,50 @@
+/*IMPORTAÇÃO DAS FONTES*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans&family=Noto+Serif&family=Roboto&display=swap');
+
+.Paleta-de-Cores{
+    background-color: #00202E;
+    background-color: #055576;
+    background-color: #018AC9;
+    background-color: #178AC5;
+    background-color: #ffffff;
+    background-color: #EEF1F1;
+}
+.Todas-as-fontes{
+ /*@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans&family=Noto+Serif&family=Roboto&display=swap');*/
+font-family: 'Merriweather', serif;
+font-family: 'Merriweather Sans', sans-serif;
+font-family: 'Noto Serif', serif;
+font-family: 'Roboto', sans-serif;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html, body{
+    width: 100%;
+
+    padding: 0%;
+    margin: 0%;
+}
+header{
+
+    width: 100%;
+
+    padding: 30px;
+    margin: auto;
+   
+    background-color: #055576;
+    
+}
+header > h1{
+    color: #ffffff;
+    text-align: center;
+    
+    font-family: 'Merriweather ', serif;
+    font-size: 50pt;
+    
+}
+header > h1 > span{
+    color: #018AC9;
+    font-weight: normal;
+}
