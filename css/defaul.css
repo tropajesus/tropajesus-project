@@ -20,6 +20,30 @@ font-family: 'Roboto', sans-serif;
     margin: 0%;
     padding: 0%;
 }
+
+html{
+    /*VARIAVEIS PARA GUARDAR A PALETA DE CORES (nomes fantasia)*/
+    
+        --header: #00202E;
+        --nav: #055576;
+        --span: #018AC9;
+        --link-hover: #178AC5;
+        --titulo: #ffffff;
+        --nav-font: #EEF1F1;
+    
+    /*NO USO: background-color: var(--header); */
+
+
+    /*VARIAVEIS PARA GUARDAR AS FONTES (nomes fantasia)*/
+    /*
+        --font-titulo: 'Merriweather', serif;
+        --font-corpo: 'Merriweather Sans', sans-serif;
+        --font-link: 'Noto Serif', serif;
+        --font-destaque: 'Roboto', sans-serif;
+    */
+    /*NO USO: font-family: var(--font-titulo);*/
+}
+
 body{
     width: 100%;
 
@@ -33,8 +57,9 @@ header{
 
     width: 100%;
 
-    padding: 30px;
-    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0;
    
     background-color: #00202E;
 
@@ -90,4 +115,133 @@ nav > a{
 nav > a:hover{
     color: #178AC5;
     text-decoration: inline;
+}
+
+/*Redes Sociais*/
+
+#medias{
+    z-index: 100;
+}
+
+.media{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: var(--nav);
+    font-size: 45px;
+    text-align: center;
+    position: absolute;
+    left: 5px;
+    top: 300px;
+    transition: all 1s ease;
+    transition-delay: .9s;
+    cursor: pointer;
+}
+
+.media > span{
+    transition: all 1s ease;
+}
+
+#medias > span{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+}
+
+.media-active{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: var(--nav);
+    font-size: 45px;
+    text-align: center;
+    position: absolute;
+    top: 300px;
+    cursor: pointer;
+    transform: translateX(105px);
+    transition: all 1s ease;
+}
+
+.media-active > span{
+    transform: rotate(45deg);
+    transition: all 1s ease;
+}
+
+#medias ~ div{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: var(--nav);
+    position: absolute;
+    top: 310px;
+    left: 110px;
+    cursor: pointer;
+}
+
+.link-invisible{
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.link-visible.a{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition: all 1s ease;
+    transition-delay: 1s;
+    transform: translateY(-65px);
+}
+
+.link-visible.b{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition: all 1s ease;
+    transition-delay: 1.2s;
+    transform: translateY(-20px) translateX(55px);
+}
+
+.link-visible.c{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition: all 1s ease;
+    transition-delay: 1.4s;
+    transform: translateY(45px) translateX(35px);
+}
+
+.link-visible.d{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition: all 1s ease;
+    transition-delay: 1.6s;
+    transform: translateY(45px) translateX(-35px);
+}
+
+.link-visible.e{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition: all 1s ease;
+    transition-delay: 1.8s;
+    transform: translateY(-20px) translateX(-55px);
+}
+
+.links img{
+    transform: translateY(7px) translateX(7px);
+}
+
+#medias ~ div:hover{
+    transition-delay: 0ms;
+    transition: all 0 ease;
+    background-color: black;
 }
