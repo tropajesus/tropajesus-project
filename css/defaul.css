@@ -200,6 +200,7 @@ main > section > h3{
 
 #medias{
     z-index: 100;
+    color: white;
 }
 
 .media{
@@ -210,7 +211,7 @@ main > section > h3{
     font-size: 35px;
     text-align: center;
     position: absolute;
-    left: 5px;
+    right: 10px;
     top: 140px;
     transition: all 1s ease;
     transition-delay: .9s;
@@ -243,7 +244,7 @@ main > section > h3{
     text-align: center;
     position: absolute;
     top: 140px;
-    left: 5px;
+    right: 10px;
     cursor: pointer;
 }
 
@@ -259,7 +260,7 @@ main > section > h3{
     background-color: var(--nav);
     position: absolute;
     top: 140px;
-    left: 10px;
+    right: 10px;
     cursor: pointer;
 }
 
@@ -276,7 +277,7 @@ main > section > h3{
     visibility: visible;
     transition: all 1s ease;
     transition-delay: 0s;
-    transform: translateX(50px);
+    transform: translateX(-50px);
 }
 
 .link-visible.b{
@@ -285,7 +286,7 @@ main > section > h3{
     visibility: visible;
     transition: all 1s ease;
     transition-delay: 0.2s;
-    transform: translateX(95px);
+    transform: translateX(-95px);
 }
 
 .link-visible.c{
@@ -294,7 +295,7 @@ main > section > h3{
     visibility: visible;
     transition: all 1s ease;
     transition-delay: 0.4s;
-    transform: translateX(140px);
+    transform: translateX(-140px);
 }
 
 .link-visible.d{
@@ -303,7 +304,7 @@ main > section > h3{
     visibility: visible;
     transition: all 1s ease;
     transition-delay: 0.6s;
-    transform: translateX(185px);
+    transform: translateX(-185px);
 }
 
 .link-visible.e{
@@ -312,7 +313,7 @@ main > section > h3{
     visibility: visible;
     transition: all 1s ease;
     transition-delay: 0.8s;
-    transform: translateX(230px);
+    transform: translateX(-230px);
 }
 
 .links img{
